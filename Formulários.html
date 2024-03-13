@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Exemplo 1 Formulário</h1>
+    <h1>Formulários</h1>
     <form>
         <fieldset>
             <legend> Dados Principais</legend>
@@ -26,8 +26,27 @@
         </fieldset>
         <fieldset> 
             <legend>Dados complementares</legend>
-            
+            <label>Renda Familiar
+                <input type="number" min="0" step="0.01">
+            </label>
+            <h4>Preferência musicais</h4>
+            <input type="checkbox" value="Samba">Samba<br> 
+            <input type="checkbox" value="Rock">Rock<br> 
+            <input type="checkbox" value="Pop">Pop<br> 
+            <br>
+            <label for="Estado">EstadoNatal</label>
+            <select id="estado">
+                <option selected disabled>selecione...</option>
+                <option value="RO">Rondônia</option>
+                <option value="SP">São Paulo</option>
+                <option value="AL">Alagoas</option>
+                <option value="PB">Paraíba</option>
+            </select><br>
+            <label for="obs">Observações</label><br>
+            <textarea id="obs" name="obs" cols="40" rows="1o"></textarea> 
         </fieldset>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
     </form>
 </body>
 </html>
